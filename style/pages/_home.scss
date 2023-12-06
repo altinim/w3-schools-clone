@@ -1,0 +1,19 @@
+.main-container  { 
+  width: 70%;
+  margin-left: $aside-width;
+    h1{ 
+      margin: 0.5em;
+      margin-bottom: 0;
+  }   
+  article {
+    margin: 1.5em;
+  }
+}
+.w3-container {
+  background-color: darken($bg-color,10%);
+  padding: 3rem;
+  text-align: center;
+}
+.heading {
+  margin-bottom: 15px;
+}

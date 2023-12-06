@@ -1,0 +1,50 @@
+@use "../abstract/variables";
+%nav-svg{
+  margin:5px;
+}
+.left-navbar{
+  svg{
+    @extend %nav-svg;
+
+  }
+}
+.right-navbar  {
+  svg{
+    @extend %nav-svg;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    color: variables.$icons-color ;
+  }
+}
+nav {
+    justify-content: space-between;
+    a {
+      &:hover{ 
+        background-color: variables.$primary-color;
+        color: variables.$bg-color;
+      }
+ 
+    }
+}
+.top-navbar{
+  padding:0 20px; 
+  a{
+      @extend .center;
+      height: 100%;
+      padding: 15px;
+      width: 100%;
+  }
+}
+.right-navbar {
+  @extend .center;
+  gap: 1em;
+}
+.logo {
+  width:variables.$logo-size;
+  height: variables.$logo-size;
+  margin: 5px;
+}
+.scroll-right {
+  color: variables.$text-color;
+}

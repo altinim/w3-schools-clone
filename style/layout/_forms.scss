@@ -1,0 +1,41 @@
+form {
+  max-width: 500px;
+  border: 1px solid darken($bg-color, 20%);
+  border-radius: $radius * 4;
+  padding: 50px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid darken($bg-color, 30%);
+  font-size: 1.1em;
+  border-radius: $radius;
+  &::placeholder {
+    font-size: 1rem;
+  }
+}
+.floating-label-group {
+  position: relative;
+  margin: 30px 0;
+}
+.input-control {
+  .error {
+    margin-bottom: 20px;
+    color: $error-color;
+    float: left;
+    font-size: 0.9rem;
+    height: fit-content;
+  }
+}
+.input-control.error input {
+  border-color: $error-color;
+}
+.label-split {
+  @extend .flex;
+  gap: 1rem;
+  margin: 30px 0;
+  .floating-label-group {
+    margin: 0;
+    max-width: 50%;
+  }
+}

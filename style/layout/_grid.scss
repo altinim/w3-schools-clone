@@ -1,0 +1,8 @@
+.grid{
+    display:grid;
+}
+@mixin grid-display($min-col-width, $min-row-height){
+    @extend .grid;
+    grid-template-columns: repeat(auto-fit, minmax($min-col-width, 1fr));
+    grid-auto-rows: minmax($min-row-height, auto);
+}

@@ -1,0 +1,32 @@
+.login-container {
+  @extend .center;
+  flex-direction: column;
+  height: 100vh;
+  button {
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-radius: $radius * 5;
+  }
+  h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: 700;
+  }
+  div {
+    text-align: center;
+  }
+  .register-link {
+    color: $primary-color;
+  }
+  hr {
+    margin: 5px;
+  }
+  button {
+    div {
+      display: inline;
+      position: relative;
+      top: 3px;
+    }
+  }
+}

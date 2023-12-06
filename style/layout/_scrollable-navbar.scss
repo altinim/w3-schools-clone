@@ -1,0 +1,12 @@
+.scrollable-div {
+    @extend .flex;
+    background-color:$secondary-color;
+    justify-content: space-between;
+    overflow: hidden;
+    a {
+    color: $bg-color;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size:0.9rem;
+  }
+}

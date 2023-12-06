@@ -1,0 +1,40 @@
+@media (max-width: 1300px) {
+  .right-navbar {
+    ul {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .main-container {
+    width: 100%;
+    margin: 0;
+  }
+  .left-navbar {
+    li {
+      display: none;
+      &:first-child {
+        display: inline;
+      }
+    }
+  }
+  .left-aside {
+    display: none;
+  }
+  .container {
+    margin: 0;
+  }
+  .right-navbar ul {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@media (max-width: 570px) {
+  .right-navbar {
+    ul {
+      display: none;
+    }
+  }
+}

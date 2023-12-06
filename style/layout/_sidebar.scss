@@ -1,0 +1,23 @@
+aside {
+  width: $aside-width;
+  position: fixed;
+  height: 100vh;
+  background-color: darken($bg-color, 10%);
+  padding-top: 20px;
+}
+.left-aside {
+  overflow-y: scroll;
+  li {
+    padding: 3px 25px;
+    &:first-child {
+      background-color: $primary-color;
+      a {
+        color: $bg-color;
+      }
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding: 5px 25px;
+  }
+}

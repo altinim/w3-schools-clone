@@ -1,0 +1,41 @@
+@import "../abstract/variables";
+html,
+body {
+  font-family: $font-stack;
+  line-height: 1.5;
+  height: 100%;
+  color: $text-color;
+  background-color: $bg-color;
+}
+.light-mode {
+  background-color: $bg-color;
+}
+.dark-mode {
+  background-color: $bg-color-dark;
+}
+main {
+  margin-top: 90px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+}
+li {
+  @extend .flex;
+  list-style-type: none;
+  align-items: center;
+  height: 100%;
+}
+hr {
+  opacity: 0.5;
+}
+.hamburger {
+  display: none;
+}
+.menu {
+  display: none;
+}
+#logo {
+  all: unset;
+  cursor: pointer;
+}

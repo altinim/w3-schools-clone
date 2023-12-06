@@ -1,0 +1,39 @@
+header {
+  background-color: $bg-color;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  button {
+    padding: 1em 1.5rem;
+    border-radius: 25px;
+  }
+  input {
+    all: unset;
+    width: 100px;
+    border: 1px solid darken($bg-color, 30%);
+    border-radius: $radius;
+    border: none;
+  }
+  .log-in {
+    background-color: darken($bg-color, 10%);
+    color: $text-color;
+    padding-left: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .sign-up {
+    margin-right: -35px;
+    z-index: 2;
+  }
+}
+.switch-theme-img {
+  width: 15px;
+  position: relative;
+  top: 2px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#search-icon {
+  margin-right: -15px;
+}
